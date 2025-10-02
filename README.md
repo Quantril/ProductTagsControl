@@ -60,4 +60,4 @@ Please ensure any contributions follow the PCF development guidelines and includ
 
 ## License
 
-[Add your license information here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

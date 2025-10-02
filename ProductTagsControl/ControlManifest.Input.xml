@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ProductTagsControl" constructor="ProductTagsControl" version="0.0.1" display-name-key="ProductTagsControl" description-key="Product Tags Control with keyword validation" control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="tagsField" display-name-key="Tags Field" description-key="Field to store tags" of-type="Multiple" usage="bound" required="true" />
+    <property name="tableName" display-name-key="Table Name" description-key="Logical name of the table containing keywords" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="keywordsField" display-name-key="Keywords Field" description-key="Name of the field containing keywords in the specified table" of-type="SingleLine.Text" usage="input" required="true" />
+    <!--
+      Property node's of-type attribute can be of-type-group attribute.
+      Example:
+      <type-group name="numbers">
+        <type>Whole.None</type>
+        <type>Currency</type>
+        <type>FP</type>
+        <type>Decimal</type>
+      </type-group>
+      <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
+    -->
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/ProductTagsControl.css" order="1" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

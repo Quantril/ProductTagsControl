@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+  <control namespace="ProductTagsControl" constructor="ProductTagsControl" version="0.0.1" display-name-key="ProductTagsControl" description-key="Product Tags Control with keyword validation" control-type="standard" api-version="1.3.18">
+    <external-service-usage enabled="false"/>
+    <property name="tagsField" display-name-key="Tags Field" description-key="Field to store tags" of-type="Multiple" usage="bound" required="true"/>
+    <property name="tableName" display-name-key="Table Name" description-key="Logical name of the table containing keywords" of-type="SingleLine.Text" usage="input" required="true"/>
+    <property name="keywordsField" display-name-key="Keywords Field" description-key="Name of the field containing keywords in the specified table" of-type="SingleLine.Text" usage="input" required="true"/>
+    <resources>
+      <code path="bundle.js" order="1"/>
+      <css path="css/ProductTagsControl.css" order="1"/>
+    </resources>
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true"/>
+    </feature-usage>
+    <built-by name="pac" version="1.48.2"/>
+  </control>
+</manifest>
